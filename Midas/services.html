@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Our Services | Midas Auto Services — Road Rescue, Towing, Forklift &amp; Crane Hire</title>
+    <meta name="description" content="Explore Midas Auto Services' full range: 24/7 road rescue, towing &amp; breakdown, forklift &amp; crane hire, mobile car wash, car carrier, first aid kits, competent drivers, and general transport.">
+    <meta name="keywords" content="Midas Auto Services, road rescue, towing, breakdown, forklift hire, crane hire, mobile car wash, car carrier, first aid kits, Kenya">
+    <meta name="author" content="Midas Auto Services">
+    <meta property="og:title" content="Midas Auto Services | Our Services">
+    <meta property="og:description" content="Explore Midas Auto Services' full range: 24/7 road rescue, towing, breakdown, forklift & crane hire, mobile car wash, car carrier, first aid kits, and general transport.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="midas-images/midas-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" type="image/png" sizes="32x32" href="midas-images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="midas-images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="midas-images/apple-touch-icon.png">
+    <link rel="manifest" href="midas-images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Satisfy&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gold: #C9A84C;
+            --gold-light: #E2CC7E;
+            --gold-dark: #A68B3C;
+            --gold-glow: rgba(201, 168, 76, 0.08);
+            --gold-border: rgba(201, 168, 76, 0.15);
+            --gold-border-hover: rgba(201, 168, 76, 0.35);
+            --bg: #08090C;
+            --bg-2: #0F1117;
+            --bg-3: #151820;
+            --bg-card: #181C25;
+            --bg-card-hover: #1E2330;
+            --text: #EDEBE4;
+            --text-2: #B0B4BE;
+            --text-muted: #6B7080;
+            --white: #FFFFFF;
+            --font: 'Outfit', sans-serif;
+            --hand: 'Satisfy', cursive;
+            --radius: 8px;
+            --radius-lg: 14px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --whatsapp: #25D366;
+        }
+        html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; touch-action: pan-y; }
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+            overscroll-behavior-x: none;
+        }
+        /* Block horizontal swipe/zoom on all interactive elements */
+        img, svg, a, button, video, canvas {
+            touch-action: manipulation;
+        }
+        a { color: inherit; text-decoration: none; transition: color var(--transition); }
+        img { max-width: 100%; display: block; }
+        ::selection { background: var(--gold); color: var(--bg); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
+
+        /* ═══════════════════════════════════════
+           NO LOADING SCREEN — Services page loads instantly
+        ═══════════════════════════════════════ */
+        #site { opacity: 1; }
+
+        /* ═══════════════════════════════════════
+           NAVIGATION
+        ═══════════════════════════════════════ */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 0 clamp(20px, 5vw, 60px);
+            height: 72px;
+            display: flex; align-items: center; justify-content: space-between;
+            background: transparent;
+            transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
+        }
+        nav.scrolled {
+            background: rgba(8, 9, 12, 0.92);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 0 var(--gold-border);
+        }
+        .nav-logo { display: flex; align-items: center; gap: 12px; }
+        .nav-logo img { height: 38px; width: auto; }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a {
+            font-size: 0.82rem; font-weight: 500;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--text-2);
+            position: relative;
+            transition: color var(--transition);
+        }
+        .nav-links a::after {
+            content: ''; position: absolute;
+            bottom: -4px; left: 0; width: 0; height: 1px;
+            background: var(--gold);
+            transition: width var(--transition);
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .nav-cta {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 20px;
+            background: var(--gold);
+            color: var(--bg) !important;
+            font-size: 0.78rem; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            border-radius: var(--radius);
+            transition: all var(--transition);
+        }
+        .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+        .nav-cta::after { display: none !important; }
+        .nav-cta svg { width: 14px; height: 14px; }
+        .hamburger {
+            display: none; flex-direction: column;
+            gap: 5px; cursor: pointer;
+            padding: 4px; background: none; border: none;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px;
+            background: var(--text); border-radius: 2px;
+            transition: all var(--transition);
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none; position: fixed; inset: 0; z-index: 999;
+            background: rgba(8, 9, 12, 0.97);
+            backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+            flex-direction: column; align-items: center; justify-content: center;
+            gap: 28px; opacity: 0; visibility: hidden;
+            transition: opacity var(--transition), visibility var(--transition);
+        }
+        .mobile-menu.open { opacity: 1; visibility: visible; }
+        .mobile-menu a {
+            font-size: 1.4rem; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--text-2);
+            transition: color var(--transition);
+        }
+        .mobile-menu a:hover { color: var(--gold); }
+
+        /* ═══════════════════════════════════════
+           PAGE HEADER
+        ═══════════════════════════════════════ */
+        .page-header {
+            padding: 160px clamp(20px, 5vw, 60px) 80px;
+            position: relative; overflow: hidden;
+        }
+        .page-header::before {
+            content: ''; position: absolute;
+            top: -20%; right: -15%; width: 600px; height: 600px;
+            background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .page-header .breadcrumb {
+            font-size: 0.75rem; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--text-muted); margin-bottom: 20px;
+        }
+        .page-header .breadcrumb span { color: var(--gold); }
+        .page-header h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800; line-height: 1.1;
+            max-width: 700px; margin-bottom: 16px;
+        }
+        .page-header h1 em {
+            font-style: normal;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .page-header p {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: var(--text-2); max-width: 520px;
+            line-height: 1.75; font-weight: 300;
+        }
+
+        /* ═══════════════════════════════════════
+           SERVICE SECTIONS
+        ═══════════════════════════════════════ */
+        .service-section { padding: 80px clamp(20px, 5vw, 60px); }
+        .service-section:nth-child(even) { background: var(--bg-2); }
+        .service-section-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px; align-items: center;
+        }
+        .service-section:nth-child(even) .service-section-inner { direction: rtl; }
+        .service-section:nth-child(even) .service-section-inner > * { direction: ltr; }
+        .service-info .service-label {
+            font-size: 0.72rem; font-weight: 500;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 12px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .service-info .service-label::before {
+            content: ''; width: 24px; height: 1px; background: var(--gold);
+        }
+        .service-info h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: 700; line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .service-info p {
+            font-size: 0.9rem; color: var(--text-2);
+            line-height: 1.8; font-weight: 300;
+            margin-bottom: 24px;
+        }
+        .service-highlights { list-style: none; margin-bottom: 28px; }
+        .service-highlights li {
+            display: flex; align-items: flex-start; gap: 12px;
+            padding: 8px 0; font-size: 0.88rem;
+            color: var(--text-2); font-weight: 400;
+        }
+        .service-highlights li svg {
+            width: 18px; height: 18px; color: var(--gold);
+            flex-shrink: 0; margin-top: 2px;
+            stroke: currentColor; fill: none; stroke-width: 2;
+        }
+        .service-visual {
+            display: flex; align-items: center; justify-content: center;
+        }
+        .service-icon-large {
+            width: 200px; height: 200px;
+            border: 1px solid var(--gold-border);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--gold-glow);
+            position: relative;
+        }
+        .service-icon-large::before {
+            content: ''; position: absolute; inset: -16px;
+            border: 1px solid var(--gold-border);
+            border-radius: 50%; opacity: 0.3;
+        }
+        .service-icon-large svg {
+            width: 72px; height: 72px;
+            color: var(--gold); stroke: currentColor; fill: none; stroke-width: 1;
+        }
+        .service-price-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px;
+            background: var(--gold-glow);
+            border: 1px solid var(--gold-border);
+            border-radius: var(--radius);
+            font-size: 0.82rem; font-weight: 500;
+            color: var(--gold); margin-bottom: 20px;
+        }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 32px;
+            background: var(--gold); color: var(--bg);
+            font-family: var(--font); font-size: 0.85rem;
+            font-weight: 600; letter-spacing: 1px;
+            text-transform: uppercase; border-radius: var(--radius);
+            border: none; cursor: pointer;
+            transition: all var(--transition);
+        }
+        .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201, 168, 76, 0.25); }
+        .btn-primary svg { width: 16px; height: 16px; }
+
+        /* ═══════════════════════════════════════
+           CTA
+        ═══════════════════════════════════════ */
+        #cta {
+            background: linear-gradient(135deg, var(--bg-3), var(--bg));
+            text-align: center; padding: 100px clamp(20px, 5vw, 60px);
+        }
+        .cta-heading {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700; line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .cta-heading span { color: var(--gold); }
+        .cta-desc {
+            font-size: 1.05rem; color: var(--text-2);
+            max-width: 500px; margin: 0 auto 36px;
+            font-weight: 300; line-height: 1.7;
+        }
+        .cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+        /* ═══════════════════════════════════════
+           FOOTER
+        ═══════════════════════════════════════ */
+        footer {
+            background: var(--bg-2);
+            border-top: 1px solid var(--gold-border);
+            padding: 60px clamp(20px, 5vw, 60px) 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--gold-border);
+        }
+        .footer-brand p {
+            font-size: 0.85rem; color: var(--text-muted);
+            line-height: 1.7; margin-top: 16px;
+            font-weight: 300; max-width: 280px;
+        }
+        .footer-socials {
+            display: flex; gap: 10px;
+            margin-top: 16px;
+        }
+        .footer-social-link {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-border);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-muted);
+            transition: all var(--transition);
+        }
+        .footer-social-link:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: var(--gold-glow);
+        }
+        .footer-social-link svg {
+            width: 16px; height: 16px;
+            stroke: currentColor; fill: none; stroke-width: 1.5;
+        }
+        .footer-social-link .wa-fill,
+        .footer-social-link .icon-fill {
+            stroke: none; fill: currentColor;
+        }
+        .footer-col h4 {
+            font-size: 0.75rem; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--gold); margin-bottom: 20px;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 10px; }
+        .footer-col a {
+            font-size: 0.85rem; color: var(--text-muted);
+            font-weight: 300; transition: color var(--transition);
+        }
+        .footer-col a:hover { color: var(--gold); }
+        .footer-contact-item {
+            display: flex; gap: 10px; margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .footer-contact-item svg {
+            width: 16px; height: 16px; color: var(--gold);
+            margin-top: 3px; flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 1.5;
+        }
+        .footer-contact-item span {
+            font-size: 0.85rem; color: var(--text-muted);
+            font-weight: 300; line-height: 1.5;
+        }
+        .footer-contact-item a { font-size: 0.85rem; color: var(--text-muted); font-weight: 300; }
+        .footer-contact-item a:hover { color: var(--gold); }
+        .footer-bottom {
+            display: flex; align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+            flex-wrap: wrap; gap: 12px;
+        }
+        .footer-copyright {
+            font-size: 0.78rem; color: var(--text-muted);
+            font-weight: 300;
+        }
+        .footer-tagline {
+            font-family: var(--hand);
+            font-size: 1.05rem;
+            color: var(--gold);
+            transition: opacity var(--transition);
+        }
+        .footer-tagline:hover { opacity: 0.7; }
+
+        /* ═══════════════════════════════════════
+           SCROLL ANIMATIONS
+        ═══════════════════════════════════════ */
+        .reveal {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ═══════════════════════════════════════
+           UNDER CONSTRUCTION MODAL
+        ═══════════════════════════════════════ */
+        .uc-overlay {
+            display: none;
+            position: fixed; inset: 0; z-index: 10001;
+            background: rgba(8, 9, 12, 0.85);
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            align-items: center; justify-content: center;
+            padding: 20px;
+            opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .uc-overlay.open { opacity: 1; visibility: visible; }
+        .uc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border);
+            border-radius: 20px;
+            padding: clamp(32px, 6vw, 48px);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .uc-overlay.open .uc-card { transform: scale(1); }
+        .uc-close {
+            position: absolute;
+            top: 16px; right: 16px;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-border);
+            background: var(--bg-2);
+            color: var(--text-muted);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition);
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+        .uc-close:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .uc-icon {
+            width: 64px; height: 64px;
+            margin: 0 auto 24px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+            background: var(--gold-glow);
+            border: 1px solid var(--gold-border);
+        }
+        .uc-gear {
+            width: 32px; height: 32px;
+            color: var(--gold);
+            animation: ucSpin 4s linear infinite;
+        }
+        .uc-gear-2 {
+            position: absolute;
+            width: 20px; height: 20px;
+            color: var(--gold-dark);
+            animation: ucSpinReverse 3s linear infinite;
+            margin-top: 24px; margin-left: 20px;
+        }
+        @keyframes ucSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes ucSpinReverse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(-360deg); }
+        }
+        .uc-heading {
+            font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        .uc-text {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            line-height: 1.65;
+            font-weight: 300;
+        }
+
+        /* ═══════════════════════════════════════
+           WHATSAPP FLOATING BUTTON
+        ═══════════════════════════════════════ */
+        .wa-float {
+            position: fixed;
+            bottom: 22px; right: 20px;
+            z-index: 998;
+            width: 56px; height: 56px;
+            border-radius: 50%;
+            background: var(--whatsapp);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.45);
+        }
+        .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+        /* ═══════════════════════════════════════
+           AI PULSE
+        ═══════════════════════════════════════ */
+        @keyframes aiPulse { 0%, 100% { box-shadow: 0 4px 20px rgba(201,168,76,0.35); } 50% { box-shadow: 0 4px 20px rgba(201,168,76,0.35), 0 0 0 10px rgba(201,168,76,0.12), 0 0 0 20px rgba(201,168,76,0.04); } }
+        #midas-ai-btn {
+            animation: aiPulse 3s ease-in-out infinite !important;
+        }
+
+        /* ═══════════════════════════════════════
+           RESPONSIVE
+        ═══════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .service-section-inner { grid-template-columns: 1fr; gap: 40px; }
+            .service-section:nth-child(even) .service-section-inner { direction: ltr; }
+            .service-icon-large { width: 150px; height: 150px; }
+            .service-icon-large svg { width: 56px; height: 56px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            nav { padding: 0 20px; height: 64px; }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-menu { display: flex; }
+            .nav-cta-desktop { display: none; }
+            .page-header { padding: 120px 20px 60px; }
+            .service-section { padding: 60px 20px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .service-icon-large { width: 120px; height: 120px; }
+            .service-icon-large svg { width: 44px; height: 44px; }
+            .service-icon-large::before { inset: -12px; }
+
+            /* Floating buttons above emergency bar on mobile */
+            .wa-float { bottom: 78px; }
+            #midas-ai-btn { bottom: 142px !important; }
+            #midas-ai-window { bottom: 208px !important; }
+        }
+        @media (max-width: 480px) {
+            .btn-primary { padding: 12px 24px; font-size: 0.8rem; }
+        }
+
+        /* ═══════════════════════════════════════
+           EMERGENCY STICKY (MOBILE)
+        ═══════════════════════════════════════ */
+        .emergency-fixed {
+            display: none;
+            position: fixed; bottom: 0; left: 0; right: 0;
+            z-index: 900;
+            background: var(--gold);
+            color: var(--bg);
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 0.85rem; font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .emergency-fixed a { color: var(--bg); }
+        @media (max-width: 768px) {
+            .emergency-fixed { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     UNDER CONSTRUCTION MODAL
+═══════════════════════════════════════ -->
+<div class="uc-overlay" id="ucOverlay">
+    <div class="uc-card">
+        <button class="uc-close" id="ucClose" aria-label="Close">&times;</button>
+        <div class="uc-icon">
+            <svg class="uc-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            <svg class="uc-gear-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </div>
+        <div class="uc-heading">Under Construction</div>
+        <p class="uc-text">We're working on something exciting. Check back soon!</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     MAIN SITE
+═══════════════════════════════════════ -->
+<div id="site">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <img src="https://www.midasautoservices.com/assets/img/logo.png" alt="Midas Auto Services">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="https://www.midasautoservices.com/road-rescue.php" target="_blank">Road Rescue</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="javascript:void(0)" class="gallery-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-cta nav-cta-desktop">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                Call Now
+            </a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="closeMobile()">Home</a>
+        <a href="services.html" onclick="closeMobile()">Services</a>
+        <a href="https://www.midasautoservices.com/road-rescue.php" target="_blank">Road Rescue</a>
+        <a href="about.html" onclick="closeMobile()">About</a>
+        <a href="javascript:void(0)" class="gallery-link" onclick="closeMobile()">Gallery</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="breadcrumb">Home <span>/</span> Services</div>
+        <h1>What <em>We Deliver</em></h1>
+        <p>Comprehensive automotive and logistics services tailored for individuals and corporations across Kenya. Every service backed by decades of experience.</p>
+    </header>
+
+    <!-- SERVICE 1: ROAD RESCUE -->
+    <section id="road-rescue" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Flagship Service</div>
+                <h2>24/7 Road Rescue</h2>
+                <div class="service-price-tag">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    KES 6,000 per vehicle / year
+                </div>
+                <p>Our annual road rescue subscription gives you round-the-clock peace of mind. Whether it's a flat tire at dawn or a breakdown on the highway at midnight, our rapid response team is always a call away.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Flat tire change and repair</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Emergency fuel delivery</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Battery jumpstart service</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Mechanical breakdown towing</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Post-accident scene management</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Full towing and recovery</li>
+                </ul>
+                <a href="https://www.midasautoservices.com/road-rescue.php" target="_blank" class="btn-primary">
+                    Sign Up Now
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 2: TOWING -->
+    <section id="towing" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Core Service</div>
+                <h2>Towing &amp; Breakdown</h2>
+                <p>Professional towing and breakdown recovery services with countrywide support. We take a professional attitude and exercise due care towards your vehicle and property. Dependable, performing in the requested time and at the price quoted.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Countrywide towing support</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Accident and breakdown recovery</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Salvage towing</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Vehicle delivery services</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Reasonable and fair rates</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Request Towing
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 3: FORKLIFT & CRANE -->
+    <section id="forklift" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Specialized</div>
+                <h2>Forklift &amp; Crane Hire</h2>
+                <p>Specialized heavy equipment for industrial and commercial operations. Our fleet of well-maintained forklifts and cranes comes with experienced operators ready to handle your logistics challenges safely and efficiently.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Industrial forklift hire</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Crane hire for construction</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Experienced certified operators</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Flexible short and long-term hire</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Enquire Now
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 4: MOBILE CAR WASH -->
+    <section id="carwash" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Convenience</div>
+                <h2>Mobile Car Wash</h2>
+                <p>On-demand mobile car wash that comes to you. Whether at home, office, or business premises, our professional team delivers a thorough clean on your schedule. Available as weekly, fortnightly, or monthly visits.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>We come to your location</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Weekly, fortnightly, monthly plans</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Business premises visits</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Professional grade cleaning</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Book a Wash
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16v-4M12 8h.01"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 5: CAR CARRIER -->
+    <section id="carrier" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Logistics</div>
+                <h2>Car Carrier Services</h2>
+                <p>Affordable and reliable vehicle delivery across Kenya. Whether transporting a newly purchased vehicle from the port of Mombasa or moving a fleet between cities, our car carrier service ensures safe and timely delivery.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Port of Mombasa to Nairobi delivery</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Upcountry vehicle transport</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Single and fleet delivery</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Fully insured transport</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Get a Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 6: FIRST AID KITS -->
+    <section id="firstaid" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Safety</div>
+                <h2>First Aid Kits</h2>
+                <p>Personalized first aid kits that are DOSHS/OSHA 2007 compliant. Each kit comes complete with a First Aid Manual, notebook, and pen. We also offer a convenient refill service to keep your kits always stocked.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>DOSHS/OSHA 2007 compliant</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Personalized for your needs</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Includes manual, notebook, pen</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Refill service available</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Order Kits
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 7: COMPETENT DRIVERS -->
+    <section id="drivers" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Personnel</div>
+                <h2>Competent Drivers</h2>
+                <p>Short-term experienced and competent drivers available for hire. All our drivers come with certificates of good conduct and extensive driving experience across Kenyan roads. Professional, reliable, and affordable.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Certificate of good conduct</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Experienced on all road types</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Short-term flexible hire</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Competitive rates</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Hire a Driver
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 8: GENERAL TRANSPORT -->
+    <section id="transport" class="service-section">
+        <div class="service-section-inner reveal">
+            <div class="service-info">
+                <div class="service-label">Transport</div>
+                <h2>General Transport &amp; Truck Hire</h2>
+                <p>Specialized trucks for sensitive and FMCG cargo transportation. From the port of Mombasa to Nairobi or upcountry destinations, we handle your goods with the care and professionalism they deserve.</p>
+                <ul class="service-highlights">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>FMCG cargo transportation</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Sensitive cargo handling</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Port to city delivery</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Upcountry distribution</li>
+                </ul>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary">
+                    Request Transport
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="service-visual">
+                <div class="service-icon-large">
+                    <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+        <div class="reveal">
+            <h2 class="cta-heading">Ready to Get <span>Started</span>?</h2>
+            <p class="cta-desc">Contact us today for a free consultation. Whether you need emergency road rescue or a custom logistics solution, we're here to help.</p>
+            <div class="cta-actions">
+                <a href="tel:+254722870527" class="btn-primary">Call +254 722 870 527</a>
+                <a href="https://wa.me/254722870527" target="_blank" class="btn-primary" style="background:transparent;border:1px solid var(--gold);color:var(--gold);">
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="https://www.midasautoservices.com/assets/img/logo.png" alt="Midas Auto Services" style="height: 40px; width: auto;">
+                <p>Your reliable partner in logistics. 24/7 countrywide towing and recovery services since 2008. Automotive Industry Excellence Award Winner.</p>
+                <a href="https://www.midasautoservices.com/assets/img/profile/Company_Profile.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:500;color:var(--gold);margin-top:12px;letter-spacing:0.5px;transition:gap 0.3s ease;">
+                    Download Company Profile
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                </a>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/Midas-Auto-Services-Centre-2097573283790730/" target="_blank" class="footer-social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="https://wa.me/254722870527" target="_blank" class="footer-social-link" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" class="wa-fill"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/midas-auto-services-540468169" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" class="icon-fill"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="javascript:void(0)" class="gallery-link">Gallery</a></li>
+                    <li><a href="https://www.midasautoservices.com/road-rescue.php" target="_blank">Road Rescue</a></li>
+                    <li><a href="https://www.midasautoservices.com/secure/login.php" target="_blank">Member Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#road-rescue">Road Rescue</a></li>
+                    <li><a href="#towing">Towing &amp; Breakdown</a></li>
+                    <li><a href="#forklift">Forklift &amp; Crane Hire</a></li>
+                    <li><a href="#carwash">Mobile Car Wash</a></li>
+                    <li><a href="#carrier">Car Carrier</a></li>
+                    <li><a href="#firstaid">First Aid Kits</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <a href="https://www.google.com/maps/search/Repen+Complex+Katani+Road+Off+Mombasa+Road+Nairobi" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);font-weight:300;font-size:0.85rem;line-height:1.5;">Repen Complex, Katani Road,<br>Off Mombasa Road, Nairobi</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:+254722870527">+254 722 870 527</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    <a href="mailto:service@midasautoservices.com">service@midasautoservices.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">&copy; 2008 &mdash; 2026 Midas Auto Services Centre Limited. All Rights Reserved.</div>
+            <a href="https://mortappsstudios.com/" target="_blank" class="footer-tagline">Powered By MortApps Studios</a>
+        </div>
+    </footer>
+
+</div>
+
+<a href="tel:+254722870527" class="emergency-fixed">EMERGENCY: Tap to Call +254 722 870 527</a>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/254722870527" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- MIDASAI CHATBOT -->
+<div id="midas-ai-btn" style="position:fixed;bottom:90px;right:20px;z-index:999;cursor:pointer;width:56px;height:56px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(201,168,76,0.35);transition:all 0.3s ease;" onclick="toggleChat()" aria-label="Chat with MidasAI">
+    <svg id="chat-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08090C" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    <svg id="chat-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08090C" stroke-width="2" style="display:none;"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</div>
+<div id="midas-ai-window" style="position:fixed;bottom:156px;right:20px;z-index:997;width:360px;max-width:calc(100vw - 32px);height:460px;max-height:70vh;background:var(--bg-card);border:1px solid var(--gold-border);border-radius:16px;display:none;flex-direction:column;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.5);">
+    <div style="padding:16px 20px;background:var(--bg-3);border-bottom:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;">
+        <div><div style="font-weight:600;font-size:0.9rem;color:var(--text);">MidasAI</div><div style="font-size:0.7rem;color:var(--gold);margin-top:2px;">Your 24/7 Assistant</div></div>
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--gold);animation:blink 2s ease-in-out infinite;"></div>
+    </div>
+    <div id="midas-ai-messages" style="flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:8px;align-items:flex-end;"><div style="width:28px;height:28px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.7rem;font-weight:700;color:var(--bg);">M</div><div style="background:var(--bg-3);border-radius:12px 12px 12px 4px;padding:10px 14px;max-width:80%;font-size:0.84rem;color:var(--text-2);line-height:1.6;">Hi there! I'm MidasAI. Ask me about our services, pricing, coverage areas, or anything else. How can I help?</div></div>
+    </div>
+    <div id="midas-ai-typing" style="padding:0 16px 8px;display:none;"><div style="display:flex;gap:4px;align-items:center;padding-left:36px;"><div style="width:6px;height:6px;border-radius:50%;background:var(--text-muted);animation:typingDot 1.4s ease-in-out infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--text-muted);animation:typingDot 1.4s ease-in-out 0.2s infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--text-muted);animation:typingDot 1.4s ease-in-out 0.4s infinite;"></div></div></div>
+    <div style="padding:12px 16px;border-top:1px solid var(--gold-border);display:flex;gap:8px;">
+        <input id="midas-ai-input" type="text" placeholder="Ask about our services..." style="flex:1;background:var(--bg-3);border:1px solid var(--gold-border);border-radius:8px;padding:10px 14px;color:var(--text);font-family:var(--font);font-size:0.84rem;outline:none;" onkeypress="if(event.key==='Enter')sendChat()">
+        <button onclick="sendChat()" style="width:40px;height:40px;border-radius:8px;background:var(--gold);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08090C" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+    </div>
+</div>
+
+<script src="midas-ai.js"></script>
+<script>
+(function() {
+    'use strict';
+    // ── NAVBAR SCROLL ──
+    var navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', function() { hamburger.classList.toggle('active'); mobileMenu.classList.toggle('open'); document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : ''; });
+    window.closeMobile = function() { hamburger.classList.remove('active'); mobileMenu.classList.remove('open'); document.body.style.overflow = ''; };
+    var revealEls = document.querySelectorAll('.reveal');
+    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { observer.observe(el); });
+
+    // ── GALLERY UNDER CONSTRUCTION MODAL ──
+    var ucOverlay = document.getElementById('ucOverlay');
+    var ucClose = document.getElementById('ucClose');
+
+    function openUC() {
+        ucOverlay.style.display = 'flex';
+        requestAnimationFrame(function() {
+            ucOverlay.classList.add('open');
+        });
+    }
+
+    function closeUC() {
+        ucOverlay.classList.remove('open');
+        setTimeout(function() {
+            ucOverlay.style.display = 'none';
+        }, 300);
+    }
+
+    ucClose.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeUC();
+    });
+
+    ucOverlay.addEventListener('click', function(e) {
+        if (e.target === ucOverlay) {
+            closeUC();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && ucOverlay.classList.contains('open')) {
+            closeUC();
+        }
+    });
+
+    // Intercept all gallery links
+    var galleryLinks = document.querySelectorAll('.gallery-link');
+    galleryLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openUC();
+        });
+    });
+
+    // ── CHAT WINDOW ──
+    var chatOpen = false;
+    window.toggleChat = function() {
+        chatOpen = !chatOpen;
+        document.getElementById('midas-ai-window').style.display = chatOpen ? 'flex' : 'none';
+        document.getElementById('chat-icon-open').style.display = chatOpen ? 'none' : 'block';
+        document.getElementById('chat-icon-close').style.display = chatOpen ? 'block' : 'none';
+    };
+    window.sendChat = function() {
+        var input = document.getElementById('midas-ai-input');
+        var msg = input.value.trim(); if (!msg) return;
+        addChatMessage('user', msg); input.value = '';
+        document.getElementById('midas-ai-typing').style.display = 'block';
+        setTimeout(function() { document.getElementById('midas-ai-typing').style.display = 'none'; addChatMessage('bot', generateMidasResponse(msg)); }, 600 + Math.random() * 400);
+    };
+    function addChatMessage(type, text) {
+        var c = document.getElementById('midas-ai-messages');
+        var d = document.createElement('div');
+        d.style.cssText = 'opacity:0;transform:translateY(8px);transition:opacity 0.3s ease,transform 0.3s ease;';
+        if (type === 'user') { d.style.display = 'flex'; d.style.justifyContent = 'flex-end'; d.innerHTML = '<div style="background:var(--gold);color:var(--bg);border-radius:12px 12px 4px 12px;padding:10px 14px;max-width:80%;font-size:0.84rem;line-height:1.6;">' + escapeHTML(text) + '</div>'; }
+        else { d.style.display = 'flex'; d.style.gap = '8px'; d.style.alignItems = 'flex-end'; d.innerHTML = '<div style="width:28px;height:28px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.7rem;font-weight:700;color:var(--bg);">M</div><div style="background:var(--bg-3);border-radius:12px 12px 12px 4px;padding:10px 14px;max-width:80%;font-size:0.84rem;color:var(--text-2);line-height:1.6;">' + text + '</div>'; }
+        c.appendChild(d); requestAnimationFrame(function() { d.style.opacity = '1'; d.style.transform = 'translateY(0)'; }); c.scrollTop = c.scrollHeight;
+    }
+    function escapeHTML(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    // ── CODE PROTECTION ──
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('keydown', function(e) { if (e.key==='F12'||(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='J'||e.key==='C'))||(e.ctrlKey&&e.key==='u')) e.preventDefault(); });
+    setInterval(function() { if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#08090C;color:#C9A84C;font-family:sans-serif;font-size:1.2rem;">Access Denied</div>'; }, 1000);
+    var s = document.createElement('style'); s.textContent = '@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}@keyframes typingDot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}'; document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>
